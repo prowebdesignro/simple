@@ -460,6 +460,8 @@ ul.srt-menu li li li.sfHover ul {
 .rightfloat{float:right;}
 /* @notation inspired by tinyGrid, .row and percentage by Twitter Bootstrap
  */
+ 
+#hero [class*="grid_"] { margin-bottom:-20px;}
 
 }
 
