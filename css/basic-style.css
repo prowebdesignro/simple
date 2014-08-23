@@ -1,5 +1,5 @@
 /*
-Simple Responsive Template
+Simple Responsive Template v 1.2
 
 
 primary styles 
@@ -169,6 +169,11 @@ img{ max-width:100%; height:auto;}
 .grid_11,
 .grid_12 {
 	margin-bottom:40px;
+	/*positioning and padding*/
+	position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /*FOOTER*/
@@ -226,16 +231,18 @@ a.buttonlink:hover{
 
 
 
-/* Contain floats: h5bp.com/q */ 
-.clearfix:before, .clearfix:after { content: ""; display: table; }
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
-
-.rightfloat{
-	float:right;
+/* Contain floats*/ 
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
 }
-.leftfloat{
-	float:left;
+.clearfix:after,
+.container:after,
+.row:after{
+  clear: both;
 }
 
 
@@ -416,18 +423,23 @@ ul.srt-menu li li li.sfHover ul {
  & Columns : 12 
 
  */
-.grid_1 { width: 5%; }
-.grid_2 { width: 13.333333333333%; }
-.grid_3 { width: 21.666666666667%; }
-.grid_4 { width: 30%; }
-.grid_5 { width: 38.333333333333%; }
-.grid_6 { width: 46.666666666667%; }
-.grid_7 { width: 55%; }
-.grid_8 { width: 63.333333333333%; }
-.grid_9 { width: 71.666666666667%; }
-.grid_10 { width: 80%; }
-.grid_11 { width: 88.333333333333%; }
-.grid_12 { width: 96.666666666667%; }
+ .row{
+	 margin-left: -15px;
+     margin-right: -15px;
+}
+ 
+.grid_1 { width: 8.33333333%; }
+.grid_2 { width: 16.66666667%; }
+.grid_3 { width: 25%; }
+.grid_4 { width: 33.33333333%; }
+.grid_5 { width: 41.66666667%; }
+.grid_6 { width: 50%; }
+.grid_7 { width: 58.33333333%; }
+.grid_8 { width: 66.66666667%; }
+.grid_9 { width: 75%; }
+.grid_10 { width: 83.33333333%; }
+.grid_11 { width: 91.66666667%; }
+.grid_12 { width: 100%; }
 
 .grid_1,
 .grid_2,
@@ -441,18 +453,12 @@ ul.srt-menu li li li.sfHover ul {
 .grid_10,
 .grid_11,
 .grid_12 {
-	margin-left: 1.6666666666667%;
-	margin-right: 1.6666666666667%;
 	float: left;
 	display: block;
 }
 
-.alpha{margin-left:0px;}
-.omega{margin-right:0px;}
 .rightfloat{float:right;}
-/* @
- * tinyfluidgrid.com
- & girlfriendnyc.com
+/* @notation inspired by tinyGrid, .row and percentage by Twitter Bootstrap
  */
 
 }

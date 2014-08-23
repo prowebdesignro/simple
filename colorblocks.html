@@ -12,16 +12,16 @@
 <meta name="keywords" content="">
 
 <!-- Mobile viewport -->
-<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico"  type="image/x-icon">
 
 <!-- CSS-->
 <!-- Google web fonts. You can get your own bundle at http://www.google.com/fonts. Don't forget to update the CSS accordingly!-->
-<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic|Oswald:400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="js/flexslider/flexslider.css" />
+<link rel="stylesheet" href="js/flexslider/flexslider.css">
 <link rel="stylesheet" href="css/colorblocks-style.css">
 
 <!-- end CSS-->
@@ -51,15 +51,13 @@ text-align: center;
 margin-top:20px;
 padding:20px;
 background:#d5d0f5;
+border: 1px solid #887dc2
 }
 -->
 </style>
 </head>
 
 <body id="home">
-<!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
 
   
 <!-- header area -->
@@ -114,16 +112,17 @@ background:#d5d0f5;
     <section id="hero" class="clearfix">    
     
     <div class="wrapper">
-        <div class="grid_4 alpha">
+      <div class="row">
+        <div class="grid_4">
            
           <h1>Simple Responsive Template</h1>
           
             <p>...is a template for responsive web design. A small set of tools and best practices that allows web designers to build responsive websites faster.</p>
             <p><a href="#" class="buttonlink">CALL TO ACTION</a> <a href="#" class="buttonlink">ONE MORE</a></p>
         </div>
-        <div class="grid_8 omega rightfloat">
+        <div class="grid_8 rightfloat">
         		<!-- responsive FlexSlider image slideshow -->
-                <div class="flexslider">
+              <div class="flexslider">
                     <ul class="slides">
                         <li>
                             <img src="images/colorblocks-pic1.jpg" />
@@ -139,6 +138,7 @@ background:#d5d0f5;
                     </ul>
                   </div><!-- FlexSlider -->
                 </div><!-- end grid div -->
+           </div><!-- end .row div -->
         </div><!-- end .wrapper div -->
     </section><!-- end hero area -->
 
@@ -164,34 +164,34 @@ background:#d5d0f5;
     
     <h1>Some things in rows of 3 columns</h1>
     
- 	<div class="clearfix vertical-padding">   	
+ 	<div class="row vertical-padding">   	
         <div class="grid_4">            
           <h3>Something</h3>
           <img src="images/colorblocks-pic1.jpg" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> </div>
         
         <div class="grid_4">        	
-        	<h3>Something else</h3>
+   	    <h3>Something else</h3>
             <img src="images/colorblocks-pic2.jpg" />
        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
         
         <div class="grid_4">        	
-        	<h3>Something else</h3>
+   	    <h3>Something else</h3>
             <img src="images/colorblocks-pic3.jpg" />
        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
      </div>
         
-     <div class="clearfix vertical-padding">   	
+     <div class="row vertical-padding">   	
         <div class="grid_4">            
           <h3>Something</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
         
         <div class="grid_4">        	
-        	<h3>Something else</h3>
+       	  <h3>Something else</h3>
        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
         
         <div class="grid_4">        	
-        	<h3>Something else</h3>
+       	  <h3>Something else</h3>
        	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
      </div>
         
@@ -209,32 +209,32 @@ background:#d5d0f5;
         
         <div class="grid_12">12</div>
         
-        <div class="grid_1">1</div>
-        <div class="grid_11">11</div>
+      <div class="grid_1">1</div>
+      <div class="grid_11">11</div>
         
-        <div class="grid_2">2</div>
-        <div class="grid_10">10</div>
+      <div class="grid_2">2</div>
+      <div class="grid_10">10</div>
         
-        <div class="grid_3">3</div>
-        <div class="grid_9">9</div>
+      <div class="grid_3">3</div>
+      <div class="grid_9">9</div>
         
-        <div class="grid_4">4</div>
-        <div class="grid_8">8</div>
+      <div class="grid_4">4</div>
+      <div class="grid_8">8</div>
         
-        <div class="grid_5">5</div>
-        <div class="grid_7">7</div>
+      <div class="grid_5">5</div>
+      <div class="grid_7">7</div>
         
-        <div class="grid_6">6</div>
-        <div class="grid_6">6</div>
+      <div class="grid_6">6</div>
+      <div class="grid_6">6</div>
                 
-        <div class="grid_4">4</div>
-        <div class="grid_4">4</div>
-        <div class="grid_4">4</div>
+      <div class="grid_4">4</div>
+      <div class="grid_4">4</div>
+      <div class="grid_4">4</div>
         
-        <div class="grid_1">1</div>
-        <div class="grid_2">2</div>
-        <div class="grid_3">3</div>
-        <div class="grid_3">3</div>
+      <div class="grid_1">1</div>
+      <div class="grid_2">2</div>
+      <div class="grid_3">3</div>
+      <div class="grid_3">3</div>
         <div class="grid_3">3</div>
     </div>
     </section>
