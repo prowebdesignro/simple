@@ -19,7 +19,7 @@ $(document).ready(function(){
 	    menu   = document.getElementById( 'topnav' ).getElementsByTagName( 'ul' )[0];
 
 	if ( undefined === button )
-		return false;
+		return true;
 
 	// Hide button if menu is missing or empty.
 	if ( undefined === menu || ! menu.childNodes.length ) {
